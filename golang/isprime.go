@@ -27,12 +27,12 @@ func isprime(nb int) bool {
 
 	for i := 3; i*i <= nb; i += 2 {
 		if nb%i == 0 {
-			return true
+			return false
 		}
 	}
 	return true
 }
 
 func main() {
-	fmt.Println(isprime(11))
+	fmt.Println(isprime(2))
 }
